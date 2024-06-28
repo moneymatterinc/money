@@ -1,681 +1,277 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <link rel="icon" href="images/favicon.png" type="image/gif" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEY MATTERS</title>
+    <link rel="icon" href="images/favicon.png" type="image/gif" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <link href="font-awesome.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="responsive.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <title>Healet</title>
+        .header_section {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
-  <!-- font awesome style -->
-  <link href="font-awesome.min.css" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="responsive.css" rel="stylesheet" />
+        .container-fluid {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .slider_section {
+            position: relative;
+            background-color: #191717;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .detail-box h1 {
+            font-size: 48px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 60px 15px;
+            box-sizing: border-box;
+        }
+
+        .column img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #text-css{
+          padding-left: 50px;
+          padding-top: 20px;
+        }
+
+        #main-text-css{
+          padding-left: 50px;
+          padding-bottom: 20px;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            font-size: 18px;
+            background-color: #f1f1f1;
+            margin-bottom: 5px;
+        }
+
+        .accordion.active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 10px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer .split-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        footer .split-section-text {
+            flex: 1;
+            padding: 20px;
+            min-width: 200px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .detail-box h1 {
+                font-size: 32px;
+            }
+
+            .column {
+                flex: 100%;
+                padding: 20px 15px;
+            }
+
+            .accordion {
+                font-size: 16px;
+            }
+
+            footer .split-section-text {
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- header section strats -->
-  <header class="header_section">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <a class="navbar-brand" href="index.html">
-          <span>
-            Healet
-          </span>
-        </a>
-        <div class="" id="">
-
-          <div class="custom_menu-btn">
-            <button onclick="openNav()">
-              <span class="s-1"> </span>
-              <span class="s-2"> </span>
-              <span class="s-3"> </span>
-            </button>
-            <div id="myNav" class="overlay">
-              <div class="overlay-content">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="shop.html">Shop</a>
-                <a href="blog.html">Blog</a>
-              </div>
-            </div>
-          </div>
-
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <a class="navbar-brand" href="index.html">
+                    <span>MONEY MATTERS</span>
+                </a>
+            </nav>
         </div>
-      </nav>
-    </div>
-  </header>
-  <!-- end header section -->
+    </header>
 
-  <!-- slider section -->
-  <section class="slider_section position-relative">
-    <div class="slider_bg_box">
-      <img src="slider-bg.jpg" alt="">
-    </div>
-    <div class="slider_bg"></div>
-    <div class="container">
-      <div class="col-md-9 col-lg-8">
-        <div class="detail-box">
-          <h1>
-            Best Jewellery
-            <br> Collection
-          </h1>
-          <p>
-            It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its layout. The point of using Lorem
-          </p>
-          <div>
-            <a href="" class="slider-link">
-              Shop Now
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end slider section -->
-
-  <!-- shop section -->
-
-  <section class="shop_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Latest Products
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="p1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Necklace
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $200
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="p2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Necklace
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $300
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="p3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Necklace
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $110
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="p4.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Ring
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $45
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="p5.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Ring
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $95
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="p6.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Earrings
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $70
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="p7.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Earrings
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $400
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="p8.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Necklace
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $450
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          View All Products
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- end shop section -->
-
-  <!-- about section -->
-
-  <section class="about_section  ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="about-img.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Us
-              </h2>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam repellat dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est corporis tempore.
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end about section -->
-
-  <!-- offer section -->
-
-  <section class="offer_section layout_padding">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-7 px-0">
-          <div class="box offer-box1">
-            <img src="o1.jpg" alt="">
-            <div class="detail-box">
-              <h2>
-                Upto 15% Off
-              </h2>
-              <a href="">
-                Shop Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 px-0">
-          <div class="box offer-box2">
-            <img src="o2.jpg" alt="">
-            <div class="detail-box">
-              <h2>
-                Upto 10% Off
-              </h2>
-              <a href="">
-                Shop Now
-              </a>
-            </div>
-          </div>
-          <div class="box offer-box3">
-            <img src="o3.jpg" alt="">
-            <div class="detail-box">
-              <h2>
-                Upto 20% Off
-              </h2>
-              <a href="">
-                Shop Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end offer section -->
-
-  <!-- blog section -->
-
-  <section class="blog_section ">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Latest From Blog
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="b1.jpg" alt="">
-              <h4 class="blog_date">
-                14 <br>
-                July
-              </h4>
-            </div>
-            <div class="detail-box">
-              <h5>
-                Molestiae ad reiciendis dignissimos
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="b2.jpg" alt="">
-              <h4 class="blog_date">
-                15 <br>
-                July
-              </h4>
-            </div>
-            <div class="detail-box">
-              <h5>
-                Dolores vel maiores voluptatem enim
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end blog section -->
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
-      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="client.jpg" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Samantha Jonas
-                      </h6>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
+    <section class="slider_section position-relative">
+        <div class="slider_bg"></div>
+        <div class="container">
+            <div class="col-md-9 col-lg-8">
+                <div class="detail-box">
+                    <h1>LET US DO THE MATH</h1>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="client.jpg" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Samantha Jonas
-                      </h6>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="client.jpg" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Samantha Jonas
-                      </h6>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="carousel_btn-container">
-          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
+    </section>
+
+    <div class="row">
+        <div class="column" style="background-color:#E8E8E8;">
+            <h1 id="main-text-css" >SERVICES</h1>
         </div>
-      </div>
+        <div class="column" style="background-color:#E8E8E8">
+            <button class="accordion">PERSONAL TAXATION</button>
+            <div class="panel">
+                <p>Let us navigate through your taxes or even CRA effortlessly with our personalized approach, where every deduction finds its perfect match
+                    <br> - Maximize Deductions 
+                    <br>- Tax Compliance
+                    <br>- Tax Planning
+                    <br>- On-time Compliance
+                    <br>-CRA Representation
+                    <br>- Custom Solution
+                    <br>- Expert Advice
+                </p>
+            </div>
+            <button class="accordion">CORPORATION TAXATION</button>
+            <div class="panel">
+                <p>Streamline your corporation tax with our expert guidance. ensuring compliance and optimizing financial efficiency.Comprehensive Tax Management
+                    <br>- Tax Planning
+                    <br>- Timely Compliance
+                    <br>- Audit Support
+                    <br>- Maximize Deductions
+                    <br>- Custom Solutions
+                    <br>-CRA Representation
+                </p>
+            </div>
+            <button class="accordion">CROSS-BORDER TAXATION</button>
+            <div class="panel">
+                <p>Details about cross-border taxation.</p>
+            </div>
+            <button class="accordion">BOOKKEEPING</button>
+            <div class="panel">
+                <p>Details about bookkeeping.</p>
+            </div>
+            <button class="accordion">PROJECTION REPORTS</button>
+            <div class="panel">
+                <p>Details about projection reports.</p>
+            </div>
+            <button class="accordion">ACCOUNTING</button>
+            <div class="panel">
+                <p>Details about accounting.</p>
+            </div>
+            <button class="accordion">FINANCIAL MODELLING</button>
+            <div class="panel">
+                <p>Details about financial modelling.</p>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- end client section -->
-
-  <!-- info section -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row info_form_social_row">
-        <div class="col-md-8 col-lg-9">
-          <div class="info_form">
-            <form action="">
-              <input type="email" placeholder="Enter your email">
-              <button>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
+    <div class="row">
+        <div class="column" style="background-color:#E8E8E8">
+            <h1 id="main-text-css">WHY MONEY MATTERS</h1>
+            <p id="text-css">Why pick our tax firm? Well, we've got the know-how to tackle those tricky tax issues with finesse. Plus, we're all about making your life easier - no more stressing over deadlines or navigating confusing forms. Think of us as your tax-savvy sidekick, here to personalize our services to fit your unique situation. And hey, we've built our reputation on trust and keeping things confidential, so you can relax knowing your monies are in good hands. Let's team up and make tax season a breeze!</p>
         </div>
-        <div class="col-md-4 col-lg-3">
-
-          <div class="social_box">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </div>
+        <div class="column" style="background-color:#E8E8E8">
+            <img src="b1.jpg" alt="">
         </div>
-      </div>
-      <div class="row info_main_row">
-        <div class="col-md-6 col-lg-3">
-          <div class="info_links">
-            <h4>
-              Menu
-            </h4>
-            <div class="info_links_menu">
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="shop.html">Shop</a>
-              <a href="blog.html">Blog</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="info_insta">
-            <h4>
-              Instagram
-            </h4>
-            <div class="insta_box">
-              <div class="img-box">
-                <img src="p1.png" alt="">
-              </div>
-              <p>
-                long established fact that a reader
-              </p>
-            </div>
-            <div class="insta_box">
-              <div class="img-box">
-                <img src="p2.png" alt="">
-              </div>
-              <p>
-                long established fact that a reader
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="info_detail">
-            <h4>
-              About Us
-            </h4>
-            <p class="mb-0">
-              when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <h4>
-            Contact Us
-          </h4>
-          <div class="info_contact">
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Location
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call +01 1234567890
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope"></i>
-              <span>
-                demo@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- end info_section -->
-
-
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
+    <div class="row">
+        <div class="column" style="background-color:#E8E8E8">
+            <h1 id="main-text-css">MEET ME</h1>
+            <p id="text-css">With decades of experience blending technology seamlessly into everyday tasks, we're revolutionizing the world of taxes and finance, making even the most daunting tasks simple and intuitive. Stay tuned for exciting innovations that will transform your annual tax experience into a seamless and stress-free process.
+        </div>
+        <div class="column" style="background-color:#E8E8E8">
+            <img src="b2.jpg" alt="">
+        </div>
     </div>
-  </footer>
-  <!-- footer section -->
 
+    <footer>
+        <div class="split-section">
+            <div class="split-section-text">
+                <h2>Location</h2>
+                <p>Text for the location section goes here.</p>
+            </div>
+            <div class="split-section-text">
+                <h2>Hours</h2>
+                <p>Text for the hours section goes here.</p>
+            </div>
+            <div class="split-section-text">
+                <h2>Contacts</h2>
+                <p>Text for the contacts section goes here.</p>
+            </div>
+        </div>
+    </footer>
 
-  <!-- jQery -->
-  <script src="/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="/bootstrap.js"></script>
-  <!-- custom js -->
-  <script src="/custom.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
-
 </html>

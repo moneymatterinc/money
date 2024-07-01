@@ -5,14 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MONEY MATTERS</title>
-    <link rel="icon" href="images/favicon.png" type="image/gif" />
     <link rel="stylesheet" type="text/css" href="bootstrap.css" />
-    <link href="font-awesome.min.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="responsive.css" rel="stylesheet" />
+   
     <style>
 
-     
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -26,63 +22,23 @@
           padding-left: 40px;
           padding-top: 10px;
           padding-bottom: 40px;
-            text-align: center;
-            font-size: 60px;
-        }
-
-        .header_section {
-           
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .container-fluid {
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .navbar-brand span {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .slider_section {
-            color: white;
-            padding: 100px;
-            text-align: center;
-            border-radius: 50px;
-
-
+          text-align: center;
+          font-size: 60px;
         }
 
         #services{
-          font-family: anziano;
-font-size: 67.5936px;
-font-style: normal;
-font-variant-caps: normal;
-font-variant-east-asian: normal;
-font-variant-ligatures: normal;
-font-variant-numeric: normal;
-font-weight: 400;
-margin-left: 50px;
-  margin-right: 50px;
- padding-left: 40px;
- padding-right: 40px;
-        }
-
-        .detail-box h1 {
-            font-size: 48px;
-
+            font-family: anziano;
+            font-size: 67.5936px;
+            font-style: normal;
+            font-variant-caps: normal;
+            font-variant-east-asian: normal;
+            font-variant-ligatures: normal;
+            font-variant-numeric: normal;
+            font-weight: 400;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
 
         .row {
@@ -94,7 +50,7 @@ margin-left: 50px;
         .column {
             flex: 1;
             box-sizing: border-box;
-             
+            padding: 0 15px;
         }
 
         .column img {
@@ -102,15 +58,6 @@ margin-left: 50px;
             height: auto;
         }
 
-        #text-css{
-          padding-left: 50px;
-          padding-top: 20px;
-        }
-
-        #main-text-css{
-          padding-left: 50px;
-          padding-bottom: 20px;
-        }
         .accordion {
             cursor: pointer;
             padding: 10px;
@@ -124,38 +71,24 @@ margin-left: 50px;
             margin: 3px 0px; 
             border-bottom: 1px solid black;
             transition: 0.4s;
-
         }
-
-        /* .accordion.active, .accordion:hover {
-            background-color: #ccc;
-        } */
 
         .first_section {
-          border-radius: 25px;
-  background-position: left top;
-  background-repeat: repeat;
-  
-  text-align: center;
-  margin-top: 20px;
- height: inherit;
- position: relative;
- margin-left: 50px;
-  margin-right: 50px;
- padding-left: 40px;
- padding-right: 40px;
-  
+            border-radius: 25px;
+            background-position: left top;
+            background-repeat: repeat;
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
-       
+
         p{
           font-size: medium;
         }
-
-        /* .panel {
-            padding: 0 10px;
-            display: none;
-            overflow: hidden;
-        } */
 
         footer {
             color: rgba(255, 255, 255, 0.39);
@@ -177,21 +110,26 @@ margin-left: 50px;
             box-sizing: border-box;
         }
 
-        .first-image{
-          padding: 50px;
-          zoom: -50;
-          height: fit-content;
-          width: fit-content;
+        .about-me-image{
+            padding: 40px 200px;
         }
 
         @media (max-width: 768px) {
-            .detail-box h1 {
-                font-size: 32px;
+            header h1 {
+                font-size: 40px;
+                padding: 10px;
+            }
+
+            .first_section {
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
             .column {
                 flex: 100%;
-                padding: 20px 15px;
+                padding: 10px 5px;
             }
 
             .accordion {
@@ -202,31 +140,50 @@ margin-left: 50px;
                 padding: 10px;
                 text-align: center;
             }
+
+            .about-me-image{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .centered h1{
+                font-size: 6vw;
+
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .centered h1{
+                font-size: 2.5vw;
+            }
         }
         .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-size: 8vw;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            white-space: nowrap;
+        }
 
-.let-us{
-  font-size: 60px;
-}
-
-
-.accordion:after {
+        .accordion:after {
             content: '\002B'; /* Unicode character for "plus" sign (+) */
             color: #777;
             font-weight: bold;
             float: right;
             margin-left: 5px;
         }
+
         .active:after {
             content: "\2212"; /* Unicode character for "minus" sign (-) */
         }
+
         .panel {
             padding: 0 18px;
             max-height: 0;
@@ -234,53 +191,53 @@ margin-left: 50px;
             transition: max-height 0.2s ease-out;
         }
 
-.money-matters-section{
-  background-color: rgb(183,180,191);
-  margin-top: 60px;
-}
+        .money-matters-section {
+            background-color: rgb(183,180,191);
+            margin-top: 60px;
+        }
+
+        .first-image {
+            width: 100%;
+            border-radius: 25px;
+        }
     </style>
 </head>
 <body>
-    <header  > 
-       <h1 > MONEY MATTERS</h1>
+    <header> 
+       <h1>MONEY MATTERS</h1>
     </header>
 
-    <div class=" first_section" >
-        
+    <div class="first_section">
       <div>
-        <img src="let-us-image.jpg" style="width: 100%;border-radius: 25px;">
+        <img src="let-us-image.jpg" class="first-image" alt="Let Us Do the Math">
       </div>
-
       <div class="centered">
-                    <h3>LET US DO THE MATH</h3>
-                    </div>
-                
+        <h1>LET US DO THE MATH</h1>
+      </div>
     </div>
 
     <div class="row" id="services" style="padding: 40px;">
-        <div class="column" >
-            <h1  >SERVICES</h1>
+        <div class="column">
+            <h1>SERVICES</h1>
         </div>
         <div class="column">
             <section class="accordion">PERSONAL TAXATION</section>
             <div class="panel">
-                <p>Let us navigate through your taxes or even CRA effortlessly with our personalized approach, where every deduction finds its perfect match
-                </p>
+                <p>Let us navigate through your taxes or even CRA effortlessly with our personalized approach, where every deduction finds its perfect match.</p>
                 <p style="padding: 5px;">  
                    - Maximize Deductions 
-                    <br>- Tax Compliance
-                    <br>- Tax Planning
-                    <br>- On-time Compliance
-                    <br>- CRA Representation
-                    <br>- Custom Solution
-                    <br>- Expert Advice
+                   <br>- Tax Compliance
+                   <br>- Tax Planning
+                   <br>- On-time Compliance
+                   <br>- CRA Representation
+                   <br>- Custom Solution
+                   <br>- Expert Advice
                 </p>
             </div>
             <section class="accordion">CORPORATION TAXATION</section>
             <div class="panel">
-                <p>Streamline your corporation tax with our expert guidance. ensuring compliance and optimizing financial efficiency.Comprehensive Tax Management
-                  </p>
-                  <p style="padding: 5px;"> 
+                <p>Streamline your corporation tax with our expert guidance, ensuring compliance and optimizing financial efficiency.</p>
+                <p style="padding: 5px;"> 
                     - Tax Planning
                     <br>- Timely Compliance
                     <br>- Audit Support
@@ -292,79 +249,73 @@ margin-left: 50px;
             <section class="accordion">CROSS-BORDER TAXATION</section>
             <div class="panel">
                 <p>- Canada-India Taxation 
-                  <br>- Canada-USA Taxation </p>
+                  <br>- Canada-USA Taxation</p>
             </div>
             <section class="accordion">BOOKKEEPING</section>
             <div class="panel">
-                <p>Simplify your finances and stay ahead of the numbers game with our meticulous bookkeeping services, ensuring clarity and confidence in every entry.
-
-                  <p style="padding: 5px;">
+                <p>Simplify your finances and stay ahead of the numbers game with our meticulous bookkeeping services, ensuring clarity and confidence in every entry.</p>
+                <p style="padding: 5px;">
                   - Accurate Financial Records
-                 <br> - Day-to-Day Transactions
+                  <br>- Day-to-Day Transactions
                   <br>- Reconciliations
                   <br>- Ledger Management
                   <br>- Ensure Compliance
                   <br>- Time and Resource Savings
-                  <br> - Informed Decision-Making</p>
+                  <br>- Informed Decision-Making
                 </p>
             </div>
             <section class="accordion">PROJECTION REPORTS</section>
             <div class="panel">
-                <p>-  For Commercial Mortgage 
-                  <br>- Loans & Other Borrowings </p>
+                <p>- For Commercial Mortgage 
+                  <br>- Loans & Other Borrowings</p>
             </div>
             <section class="accordion">ACCOUNTING</section>
             <div class="panel">
-                <p>Empower your financial journey with our comprehensive accounting and finance consulting, where expertise meets innovation to drive your success story forward.
-
-                </p>
-                  <p style="padding: 5px;">
+                <p>Empower your financial journey with our comprehensive accounting and finance consulting, where expertise meets innovation to drive your success story forward.</p>
+                <p style="padding: 5px;">
                   - Financial Clarity
-                 <br> - Efficient Financial Management
-                 <br> - Comprehensive Services
-                 <br>  - Regulatory Compliance
-                 <br> - Cost Savings
-                 <br> - Data Security
-                 <br> - Custom Solutions
-                  </p>
+                  <br>- Efficient Financial Management
+                  <br>- Comprehensive Services
+                  <br>- Regulatory Compliance
+                  <br>- Cost Savings
+                  <br>- Data Security
+                  <br>- Custom Solutions
+                </p>
             </div>
             <section class="accordion">FINANCIAL MODELLING</section>
             <div class="panel">
                 <p>- All Financial Planning and Analysis, Budgeting services.</p>
             </div>
-            <section class="accordion">CPA Coaching and Guidance</section>
+            <section class="accordion">CPA COACHING AND GUIDANCE</section>
             <div class="panel">
                 <p>- For CA (ICAI) 
-                  <br>- For New Students </p>
+                  <br>- For New Students</p>
             </div>
         </div>
     </div>
 
     <div class="money-matters-section">
-    <div class="row" >
-        <div class="column"  id="services">
-          <div style="padding-top: 120px; ">
-            <h1 >WHY MONEY <br> MATTERS?</h1>
-            <p  style="padding-top: 30px; padding-right: 80px; font-size: large;">Why us? Well, we've got the know-how to tackle those tricky tax issues with finesse. Plus, we're all about making your life easier - no more stressing over deadlines or navigating confusing forms. Think of us as your tax-savvy sidekick, here to personalize our services to fit your unique situation. And hey, we've built our reputation on trust and keeping things confidential, so you can relax knowing your monies are in good hands. Let’s team up and make numbers of 
-              any kind a breeze!</p>
+        <div class="row">
+            <div class="column" id="services">
+                <div style="padding-top: 120px;">
+                    <h1>WHY MONEY MATTERS?</h1>
+                    <p style="padding-top: 30px; padding-right: 80px; font-size: large;">Why us? Well, we've got the know-how to tackle those tricky tax issues with finesse. Plus, we're all about making your life easier - no more stressing over deadlines or navigating confusing forms. Think of us as your tax-savvy sidekick, here to personalize our services to fit your unique situation. And hey, we've built our reputation on trust and keeping things confidential, so you can relax knowing your monies are in good hands. Let’s team up and make numbers of any kind a breeze!</p>
+                </div>
+            </div>
+            <div class="column">
+                <img src="money-beside.jpg" alt="Why Money Matters">
+            </div>
         </div>
-        </div>
-        <div class="column" >
-            <img   src="money-beside.jpg" alt=""  >
-        </div>
-    </div>
     </div>
 
-    <div class="row" style="padding-top: 60px;" >
-        <div class="column"   id="services" >
-            <h1 >MEET ME</h1>
-            <p style="padding-top: 30px; padding-right: 80px; font-size: large;">With decades of experience blending technology seamlessly into everyday tasks, we're revolutionizing the world of taxes and finance, making even the most daunting tasks simple and intuitive. Stay tuned for exciting innovations that will transform your 
-              experience with numbers into a seamless and stress-free process.
-              <p style="margin: 20px;"> -Nikita Ramsisaria (CPA since 2011)
-              </p>
+    <div class="row" style="padding-top: 60px;">
+        <div class="column" id="services">
+            <h1>MEET ME</h1>
+            <p style="padding-top: 30px; padding-right: 80px; font-size: large;">With decades of experience blending technology seamlessly into everyday tasks, we're revolutionizing the world of taxes and finance, making even the most daunting tasks simple and intuitive. Stay tuned for exciting innovations that will transform your experience with numbers into a seamless and stress-free process.</p>
+            <p style="margin: 20px;">- Nikita Ramsisaria (CPA since 2011)</p>
         </div>
-        <div class="column" >
-            <img src="nikitha.jpg" alt="" style="padding-left: 200px; padding-right: 200px; padding-bottom: 100px; padding-top: 40px; ">
+        <div class="column">
+            <img class="about-me-image" src="nikitha.jpg" alt="Nikita Ramsisaria" >
         </div>
     </div>
 
@@ -393,21 +344,21 @@ margin-left: 50px;
         var i;
 
         for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            var panel = this.nextElementSibling;
-            for (var j = 0; j < acc.length; j++) {
-                if (acc[j] !== this) {
-                    acc[j].classList.remove("active");
-                    acc[j].nextElementSibling.style.maxHeight = null;
+            acc[i].addEventListener("click", function() {
+                var panel = this.nextElementSibling;
+                for (var j = 0; j < acc.length; j++) {
+                    if (acc[j] !== this) {
+                        acc[j].classList.remove("active");
+                        acc[j].nextElementSibling.style.maxHeight = null;
+                    }
                 }
-            }
-            this.classList.toggle("active");
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
+                this.classList.toggle("active");
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
         }
     </script>
 </body>
